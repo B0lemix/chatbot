@@ -2,6 +2,17 @@ from flask import Flask, render_template, request, jsonify
 
 from chat import get_response
 
+import nltk 
+nltk.download('punkt')
+
+import train
+python train.py 
+
+import chat
+python chat.py
+
+
+
 app = Flask(__name__)
 
 @app.route('/')
