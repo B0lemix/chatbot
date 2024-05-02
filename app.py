@@ -5,11 +5,9 @@ from chat import get_response
 import nltk 
 nltk.download('punkt')
 
-import train
-python train.py 
-
-import chat
-python chat.py
+from subprocess import call
+call(["python", "train.py "])
+call(["python", "chat.py "])
 
 
 
